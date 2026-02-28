@@ -13,3 +13,6 @@ C:\Users\TylerD\Documents\.netDB\SMBCharacters\obj\Debug\net8.0\refint\SMBCharac
 C:\Users\TylerD\Documents\.netDB\SMBCharacters\obj\Debug\net8.0\SMBCharacters.pdb
 C:\Users\TylerD\Documents\.netDB\SMBCharacters\obj\Debug\net8.0\SMBCharacters.genruntimeconfig.cache
 C:\Users\TylerD\Documents\.netDB\SMBCharacters\obj\Debug\net8.0\ref\SMBCharacters.dll
+C:\Users\TylerD\Documents\.netDB\SMBCharacters\bin\Debug\net8.0\NLog.dll
+C:\Users\TylerD\Documents\.netDB\SMBCharacters\obj\Debug\net8.0\SMBCharacters.csproj.AssemblyReference.cache
+C:\Users\TylerD\Documents\.netDB\SMBCharacters\obj\Debug\net8.0\SMBChara.ED764B43.Up2Date

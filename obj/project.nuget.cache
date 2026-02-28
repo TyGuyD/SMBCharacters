@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "/ULGFr0lExw=",
+  "dgSpecHash": "mq7DPI0Z0r8=",
   "success": true,
   "projectFilePath": "C:\\Users\\TylerD\\Documents\\.netDB\\SMBCharacters\\SMBCharacters.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\TylerD\\.nuget\\packages\\nlog\\5.3.3\\nlog.5.3.3.nupkg.sha512"
+  ],
   "logs": []
 }
