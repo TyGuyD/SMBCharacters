@@ -1,0 +1,5 @@
+2026-02-28 03:20:51.3278|INFO|SMBCharacters.Program|Program started
+2026-02-28 03:20:57.4270|INFO|SMBCharacters.Program|User selected option: "1"
+2026-02-28 03:21:19.8894|WARN|SMBCharacters.Program|Attempted to add duplicate character: "Mario"
+2026-02-28 03:21:25.0449|INFO|SMBCharacters.Program|User selected option: ""
+2026-02-28 03:21:25.0449|INFO|SMBCharacters.Program|Program ended

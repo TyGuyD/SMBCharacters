@@ -1,9 +1,14 @@
-﻿
+﻿using NLog;
+string path = Directory.GetCurrentDirectory() + "//nlog.config";
+var logger = LogManager.Setup().LoadConfigurationFromFile(path).GetCurrentClassLogger();
+
+logger.Info("Program started");
+
 string file = "mario.csv";
 
 if (!File.Exists(file))
 {
-    // Will log error on later commit
+    logger.Error("File does not exist: {File}", file);
 }
 else
 {
@@ -33,8 +38,8 @@ else
         }
         sr.Close();
     } 
-    catch {
-        // Will log error on later commit
+    catch (Exception ex) {
+        logger.Error(ex, "Error reading file: {File}", file);
     }
 
     string? choice;
@@ -45,6 +50,7 @@ else
         Console.WriteLine("Enter to quit");
 
         choice = Console.ReadLine();
+        logger.Info("User selected option: {Choice}", choice);
 
         if (choice == "1")
         {
@@ -72,6 +78,11 @@ else
                 using StreamWriter sw = new(file, append: true);
                 sw.WriteLine($"{id},{Name},{description},{species},{firstAppearance},{year}");
                 sw.Close();
+                logger.Info("Added character: {Name}", Name);
+            }
+            else {
+                Console.WriteLine("Character already exists.");
+                logger.Warn("Attempted to add duplicate character: {Name}", Name);
             }
 
         }
@@ -93,3 +104,5 @@ else
         
     } while (choice == "1" || choice == "2");
 }
+
+logger.Info("Program ended");
