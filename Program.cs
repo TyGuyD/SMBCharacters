@@ -38,7 +38,32 @@ do
 
     if (choice == "1")
     {
-        
+        Console.Write("Name: ");
+        string Name = Console.ReadLine()!;
+
+        List<string> LowerCaseNames = Names.ConvertAll(n => n.ToLower());
+        if (!LowerCaseNames.Contains(Name.ToLower()))
+        {
+            UInt64 id = Ids.Max() + 1;
+            Console.Write("Description: ");
+            string? description = Console.ReadLine();
+            Console.Write("Species: ");
+            string species = Console.ReadLine()!;
+            Console.Write("First Appearance: ");
+            string firstAppearance = Console.ReadLine()!;
+            Console.Write("Year: ");
+            string year = Console.ReadLine()!;
+            Ids.Add(id);
+            Names.Add(Name);
+            Descriptions.Add(description);
+            Species.Add(species);
+            FirstAppearance.Add(firstAppearance);
+            Year.Add(year);
+            using StreamWriter sw = new(file, append: true);
+            sw.WriteLine($"{id},{Name},{description},{species},{firstAppearance},{year}");
+            sw.Close();
+        }
+
     }
     else if (choice == "2")
     {
