@@ -1,0 +1,15 @@
+C:\Users\TylerD\Documents\.netDB\SMBCharacters\obj\Debug\net8.0\SMBCharacters.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\TylerD\Documents\.netDB\SMBCharacters\obj\Debug\net8.0\SMBCharacters.AssemblyInfoInputs.cache
+C:\Users\TylerD\Documents\.netDB\SMBCharacters\obj\Debug\net8.0\SMBCharacters.AssemblyInfo.cs
+C:\Users\TylerD\Documents\.netDB\SMBCharacters\obj\Debug\net8.0\SMBCharacters.csproj.CoreCompileInputs.cache
+C:\Users\TylerD\Documents\.netDB\SMBCharacters\obj\Debug\net8.0\SMBCharacters.sourcelink.json
+C:\Users\TylerD\Documents\.netDB\SMBCharacters\bin\Debug\net8.0\SMBCharacters.exe
+C:\Users\TylerD\Documents\.netDB\SMBCharacters\bin\Debug\net8.0\SMBCharacters.deps.json
+C:\Users\TylerD\Documents\.netDB\SMBCharacters\bin\Debug\net8.0\SMBCharacters.runtimeconfig.json
+C:\Users\TylerD\Documents\.netDB\SMBCharacters\bin\Debug\net8.0\SMBCharacters.dll
+C:\Users\TylerD\Documents\.netDB\SMBCharacters\bin\Debug\net8.0\SMBCharacters.pdb
+C:\Users\TylerD\Documents\.netDB\SMBCharacters\obj\Debug\net8.0\SMBCharacters.dll
+C:\Users\TylerD\Documents\.netDB\SMBCharacters\obj\Debug\net8.0\refint\SMBCharacters.dll
+C:\Users\TylerD\Documents\.netDB\SMBCharacters\obj\Debug\net8.0\SMBCharacters.pdb
+C:\Users\TylerD\Documents\.netDB\SMBCharacters\obj\Debug\net8.0\SMBCharacters.genruntimeconfig.cache
+C:\Users\TylerD\Documents\.netDB\SMBCharacters\obj\Debug\net8.0\ref\SMBCharacters.dll
