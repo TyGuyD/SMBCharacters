@@ -54,10 +54,10 @@ else
             Console.Write("Name: ");
             string Name = Console.ReadLine()!;
 
-            List<string> LowerCaseNames = Names.ConvertAll(n => n.ToLower());
+            List<string> LowerCaseNames = characters.Select(c => c.Name.ToLower()).ToList();
             if (!LowerCaseNames.Contains(Name.ToLower()))
             {
-                UInt64 id = Ids.Max() + 1;
+                UInt64 id = (characters.Count > 0) ? characters.Max(c => c.Id) + 1 : 1;
                 Console.Write("Description: ");
                 string? description = Console.ReadLine();
                 Console.Write("Species: ");
@@ -66,12 +66,14 @@ else
                 string firstAppearance = Console.ReadLine()!;
                 Console.Write("Year: ");
                 string year = Console.ReadLine()!;
-                Ids.Add(id);
-                Names.Add(Name);
-                Descriptions.Add(description);
-                Species.Add(species);
-                FirstAppearance.Add(firstAppearance);
-                Year.Add(year);
+                Character newCharacter = new(){
+                    Id = id,
+                    Name = Name,
+                    Description = description ?? string.Empty,
+                    Species = species,
+                    FirstAppearance = firstAppearance,
+                    Year = year
+                };
                 using StreamWriter sw = new(file, append: true);
                 sw.WriteLine($"{id},{Name},{description},{species},{firstAppearance},{year}");
                 sw.Close();
@@ -83,6 +85,7 @@ else
             }
 
         }
+        /*
         else if (choice == "2")
         {
             Console.WriteLine();
@@ -97,7 +100,7 @@ else
                 Console.WriteLine();
             }
         }
-        
+        */
         
     } while (choice == "1" || choice == "2");
 }
