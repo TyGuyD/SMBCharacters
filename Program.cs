@@ -12,12 +12,7 @@ if (!File.Exists(file))
 }
 else
 {
-    List<UInt64> Ids = [];
-    List<string> Names = [];
-    List<string?> Descriptions = [];
-    List<string> Species = [];
-    List<string> FirstAppearance = [];
-    List<string> Year = [];
+    List<Character> characters = [];
 
     try {
         StreamReader sr = new(file);
@@ -27,13 +22,15 @@ else
             string? line = sr.ReadLine();
             if (line is not null)
             {
+                Character character = new();
                 string[] characterDetails = line.Split(',');
-                Ids.Add(UInt64.Parse(characterDetails[0]));
-                Names.Add(characterDetails[1]);
-                Descriptions.Add(characterDetails[2]);
-                Species.Add(characterDetails[3]);
-                FirstAppearance.Add(characterDetails[4]);
-                Year.Add(characterDetails[5]);
+                character.Id = UInt64.Parse(characterDetails[0]);
+                character.Name = characterDetails[1] ?? string.Empty;
+                character.Description = characterDetails[2] ?? string.Empty;
+                character.Species = characterDetails[3] ?? string.Empty;
+                character.FirstAppearance = characterDetails[4] ?? string.Empty;
+                character.Year = characterDetails[5] ?? string.Empty;
+                characters.Add(character);
             }
         }
         sr.Close();
