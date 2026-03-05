@@ -85,22 +85,15 @@ else
             }
 
         }
-        /*
         else if (choice == "2")
         {
             Console.WriteLine();
-            for (int i = 0; i < Ids.Count; i++)
+            for (int i = 0; i < characters.Count; i++)
             {
-                Console.WriteLine($"Id: {Ids[i]}");
-                Console.WriteLine($"Name: {Names[i]}");
-                Console.WriteLine($"Description: {Descriptions[i]}");
-                Console.WriteLine($"Species: {Species[i]}");
-                Console.WriteLine($"First Appearance: {FirstAppearance[i]}");
-                Console.WriteLine($"Year: {Year[i]}");
-                Console.WriteLine();
+               Character c = characters[i];
+                Console.WriteLine($"ID: {i + 1}\nName: {c.Name}\nDescription: {c.Description}\nSpecies: {c.Species}\nAppearance: {c.FirstAppearance}\nYear: {c.Year}\n");
             }
         }
-        */
         
     } while (choice == "1" || choice == "2");
 }
